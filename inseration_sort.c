@@ -9,7 +9,7 @@ void insertion_sort(int arr[], int arr_size);
 
 int main()
 {
-    int arr[] = {-18,-7,0,6,7,8,12,15,100};
+    int arr[] = {0,6,-18, -7};
     int arr_size = sizeof(arr)/sizeof(arr[0]);
     print_array(arr, arr_size);
     insertion_sort(arr, arr_size);
@@ -37,6 +37,8 @@ void insertion_sort(int arr[], int arr_size)
         for( j=i-1; j >= 0; j--) {
             if (temp < arr[j]) {
                 arr[j+1] = arr[j];
+            } else {
+                break;
             }
         }
         arr[++j] = temp;
