@@ -6,6 +6,7 @@
 
 void print_array(int arr[], int arr_size);
 void quick_sort(int arr[], int low, int high);
+int partition(int arr[], int low, int high);
 void swap(int *elem1, int *elem2);
 
 int main()
