@@ -5,7 +5,8 @@
 #define SUCCESS 0
 
 void print_array(int arr[], int arr_size);
-void merge_sort(int arr[], int arr_size);
+void merge_sort(int arr[], int low, int high);
+void merge(int arr[], int low, int mid, int high);
 
 int main()
 {
